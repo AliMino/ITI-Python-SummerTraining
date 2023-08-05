@@ -11,6 +11,9 @@
     - [Type Casting](#type-casting)
   - [Basic Arithmetic](#basic-arithmetic)
     - [Operators' Precedence](#operators-precedence)
+  - [Working with variables](#working-with-variables)
+    - [Examples for valid variable names](#examples-for-valid-variable-names)
+    - [Examples for invalid variable names](#examples-for-invalid-variable-names)
   - [Glossary](#glossary)
   - [Appendix](#appendix)
     - [Special Characters](#special-characters)
@@ -135,6 +138,34 @@ The arithemtic operators are evaluated in the following order
 - `**`.
 - `*`, `/` & `%`, from left to right.
 - `+` & `-`, from left to right.
+
+---
+
+## Working with variables
+
+The name of a variable consists of one or more english character (a-z, A-Z) or an underscore `_` followed by zero or more english characters, underscores `_`, or numbers.
+
+### Examples for valid variable names
+
+- name
+- age
+- python_version
+- now
+- value1
+- value2
+- value_2
+- \_val_
+- _
+- _1
+- _2
+
+### Examples for invalid variable names
+
+- python version
+- 1value
+- va!lue
+- vaيlue
+- va💡lue
 
 ---
 
