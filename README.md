@@ -6,6 +6,9 @@
     - [Printing values to the terminal](#printing-values-to-the-terminal)
       - [Modifying values separator](#modifying-values-separator)
       - [Modifying the end of the line](#modifying-the-end-of-the-line)
+  - [Read values from the user](#read-values-from-the-user)
+  - [Data types](#data-types)
+    - [Type Casting](#type-casting)
   - [Glossary](#glossary)
   - [Appendix](#appendix)
     - [Special Characters](#special-characters)
@@ -49,6 +52,65 @@ print('Python', '3.6', sep=':')
 #### Modifying the end of the line
 
 By default, the `print()` function inserts a new line after the passed value(s). To override this behavior; pass the `end` parameter to the `print()` function: print('something', end='').
+
+---
+
+## Read values from the user
+
+[Go to code](tutorial/2-prompt-the-user.py)
+
+The `input()` function prompts the user to enter a value.
+
+```python
+print('Hello', input('What is your name?'))
+```
+
+---
+
+## Data types
+
+[Go to code](tutorial/3-querying-for-types.py)
+
+|             Data Type | Name in Python | Description                                              | Examples            |
+| --------------------: | :------------: | :------------------------------------------------------- | :------------------ |
+|                String |      str       | A sequence of characters surrounded by either `'` or `"` | 'abc', '123', "456" |
+|               Integer |      int       | A whole number                                           | -3, 0, 100, 1e-3    |
+| Floating-point Number |     float      | A real number; has a decimal point `.`                   | 3.1, -6.4, 0.0      |
+
+`... more are coming soon`
+
+To query for a type of an arbitrary value, use `type(value)`:
+
+```python
+print(type(''))
+print(type(1))
+print(type(1.0))
+```
+
+### Type Casting
+
+Type casting is a builtin function in most programming languages that offers an implicit conversion of types.
+
+To cast something to a string
+
+```python
+str(1)
+str(1.5)
+```
+
+To cast something to an integer
+
+```python
+int('123') + 5
+int('-7')
+```
+
+Note: You could add numbers using the `+` sign, however, the `+` sign concatenates (join) strings. You cannot add numbers to strings, you will have to cast either of them.
+
+```python
+'1' + '2' # will result in '12'
+1 + 2     # will result in 3
+```
 
 ---
 
