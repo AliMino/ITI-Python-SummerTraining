@@ -9,6 +9,8 @@
   - [Read values from the user](#read-values-from-the-user)
   - [Data types](#data-types)
     - [Type Casting](#type-casting)
+  - [Basic Arithmetic](#basic-arithmetic)
+    - [Operators' Precedence](#operators-precedence)
   - [Glossary](#glossary)
   - [Appendix](#appendix)
     - [Special Characters](#special-characters)
@@ -114,13 +116,34 @@ Note: You could add numbers using the `+` sign, however, the `+` sign concatenat
 
 ---
 
+## Basic Arithmetic
+
+Basic arithmetic is done in python using operators
+
+- Summation: `+`
+- Subtraction: `-`
+- Multiplication: `*`
+- Division: `/`
+- Power: `**`
+- Modulo: `%`
+
+### Operators' Precedence
+
+The arithemtic operators are evaluated in the following order
+
+- `()`.
+- `**`.
+- `*`, `/` & `%`, from left to right.
+- `+` & `-`, from left to right.
+
+---
+
 ---
 
 ## Glossary
 
-| Term   | Definition                                               | Example             |
-| :----- | :------------------------------------------------------- | :------------------ |
-| String | A sequence of characters surrounded by either `'` or `"` | 'abc', '123', "456" |
+| Term | Definition | Example |
+| :--- | :--------- | :------ |
 
 ## Appendix
 
