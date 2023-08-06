@@ -25,6 +25,7 @@
   - [Glossary](#glossary)
   - [Appendix](#appendix)
     - [Special Characters](#special-characters)
+    - [Static vs. Dynamic Typing](#static-vs-dynamic-typing)
 
 ## Installing Python
 
@@ -247,6 +248,12 @@ Spcecial characters are a set of well-known characters preceeded by a backslash 
 - `\b`: backspace.
 
 Note: to print a special character as it appears; prefix it with a backslash `\`: to print `\n` type `\\n`, and so on.
+
+---
+
+### Static vs. Dynamic Typing
+
+TODO
 
 [^spec-chars]: https://en.wikipedia.org/wiki/List_of_Unicode_characters#Control_codes
 
