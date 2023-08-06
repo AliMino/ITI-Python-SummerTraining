@@ -6,22 +6,22 @@
     - [Printing values to the terminal](#printing-values-to-the-terminal)
       - [Modifying values separator](#modifying-values-separator)
       - [Modifying the end of the line](#modifying-the-end-of-the-line)
-  - [Read values from the user](#read-values-from-the-user)
-  - [Data types](#data-types)
-    - [Type Casting](#type-casting)
-  - [Basic Arithmetic](#basic-arithmetic)
-    - [Operators' Precedence](#operators-precedence)
-  - [Working with variables](#working-with-variables)
-    - [Examples for valid variable names](#examples-for-valid-variable-names)
-    - [Examples for invalid variable names](#examples-for-invalid-variable-names)
-  - [Manipulating strings](#manipulating-strings)
-    - [String indexing](#string-indexing)
-    - [String Slicing](#string-slicing)
-      - [Using stride](#using-stride)
-    - [Querying string length](#querying-string-length)
-    - [Usefull string methods](#usefull-string-methods)
-    - [Formatting strings](#formatting-strings)
-    - [Here document](#here-document)
+    - [Read values from the user](#read-values-from-the-user)
+    - [Data types](#data-types)
+      - [Type Casting](#type-casting)
+    - [Basic Arithmetic](#basic-arithmetic)
+      - [Operators' Precedence](#operators-precedence)
+    - [Working with variables](#working-with-variables)
+      - [Examples for valid variable names](#examples-for-valid-variable-names)
+      - [Examples for invalid variable names](#examples-for-invalid-variable-names)
+    - [Manipulating strings](#manipulating-strings)
+      - [String indexing](#string-indexing)
+      - [String Slicing](#string-slicing)
+        - [Using stride](#using-stride)
+      - [Querying string length](#querying-string-length)
+      - [Usefull string methods](#usefull-string-methods)
+      - [Formatting strings](#formatting-strings)
+      - [Here document](#here-document)
   - [Glossary](#glossary)
   - [Appendix](#appendix)
     - [Special Characters](#special-characters)
@@ -68,7 +68,7 @@ By default, the `print()` function inserts a new line after the passed value(s).
 
 ---
 
-## Read values from the user
+### Read values from the user
 
 [Go to code](tutorial/2-prompt-the-user.py)
 
@@ -80,7 +80,7 @@ print('Hello', input('What is your name?'))
 
 ---
 
-## Data types
+### Data types
 
 [Go to code](tutorial/3-querying-for-types.py)
 
@@ -100,7 +100,7 @@ print(type(1))
 print(type(1.0))
 ```
 
-### Type Casting
+#### Type Casting
 
 Type casting is a builtin function in most programming languages that offers an implicit conversion of types.
 
@@ -127,7 +127,7 @@ Note: You could add numbers using the `+` sign, however, the `+` sign concatenat
 
 ---
 
-## Basic Arithmetic
+### Basic Arithmetic
 
 Basic arithmetic is done in python using operators
 
@@ -138,7 +138,7 @@ Basic arithmetic is done in python using operators
 - Power: `**`
 - Modulo: `%`
 
-### Operators' Precedence
+#### Operators' Precedence
 
 The arithemtic operators are evaluated in the following order
 
@@ -149,11 +149,11 @@ The arithemtic operators are evaluated in the following order
 
 ---
 
-## Working with variables
+### Working with variables
 
 The name of a variable consists of one or more english character (a-z, A-Z) or an underscore `_` followed by zero or more english characters, underscores `_`, or numbers.
 
-### Examples for valid variable names
+#### Examples for valid variable names
 
 - name
 - age
@@ -167,7 +167,7 @@ The name of a variable consists of one or more english character (a-z, A-Z) or a
 - _1
 - _2
 
-### Examples for invalid variable names
+#### Examples for invalid variable names
 
 - python version
 - 1value
@@ -177,9 +177,9 @@ The name of a variable consists of one or more english character (a-z, A-Z) or a
 
 ---
 
-## Manipulating strings
+### Manipulating strings
 
-### String indexing
+#### String indexing
 
 Retrieving a single character from a string.
 
@@ -190,7 +190,7 @@ print('Hello'[-1])
 print('Hello'[-2])
 ```
 
-### String Slicing
+#### String Slicing
 
 Retrieving a substring from a string.
 
@@ -200,31 +200,31 @@ print('Hello'[1:])
 print('Hello'[:-2])
 ```
 
-#### Using stride
+##### Using stride
 
 ```python
 print('123456789'[::2])
 print('123456789'[1::2])
 ```
 
-### Querying string length
+#### Querying string length
 
 ```python
 print(len('Hello'))
 ```
 
-### Usefull string methods
+#### Usefull string methods
 
 - lower()
 - upper()
 - split()
 
-### Formatting strings
+#### Formatting strings
 
 - format()
 - f-strings.
 
-### Here document
+#### Here document
 
 ---
 
