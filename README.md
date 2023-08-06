@@ -14,6 +14,14 @@
   - [Working with variables](#working-with-variables)
     - [Examples for valid variable names](#examples-for-valid-variable-names)
     - [Examples for invalid variable names](#examples-for-invalid-variable-names)
+  - [Manipulating strings](#manipulating-strings)
+    - [String indexing](#string-indexing)
+    - [String Slicing](#string-slicing)
+      - [Using stride](#using-stride)
+    - [Querying string length](#querying-string-length)
+    - [Usefull string methods](#usefull-string-methods)
+    - [Formatting strings](#formatting-strings)
+    - [Here document](#here-document)
   - [Glossary](#glossary)
   - [Appendix](#appendix)
     - [Special Characters](#special-characters)
@@ -166,6 +174,57 @@ The name of a variable consists of one or more english character (a-z, A-Z) or a
 - va!lue
 - vaيlue
 - va💡lue
+
+---
+
+## Manipulating strings
+
+### String indexing
+
+Retrieving a single character from a string.
+
+```python
+print('Hello'[0])
+print('Hello'[1])
+print('Hello'[-1])
+print('Hello'[-2])
+```
+
+### String Slicing
+
+Retrieving a substring from a string.
+
+```python
+print('Hello'[0:])
+print('Hello'[1:])
+print('Hello'[:-2])
+```
+
+#### Using stride
+
+```python
+print('123456789'[::2])
+print('123456789'[1::2])
+```
+
+### Querying string length
+
+```python
+print(len('Hello'))
+```
+
+### Usefull string methods
+
+- lower()
+- upper()
+- split()
+
+### Formatting strings
+
+- format()
+- f-strings.
+
+### Here document
 
 ---
 
