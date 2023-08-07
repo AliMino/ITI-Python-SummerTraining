@@ -90,3 +90,82 @@
 # print(n * 3)
 
 # print(int(n) + int(n * 2) + int(n * 3))
+
+################################################################################################################
+################################################################################################################
+
+# # Write a program to accept a string from the user and remove characters starting from zero up to 3 (inclusive) and prints the remaining string.
+
+# whole_string = input('Write a string: ')
+
+# print(whole_string[4:])
+# ############################ print('The length of', whole_string, 'is', len(whole_string))
+
+################################################################################################################
+
+# # Here Document
+# print(
+# """
+# I'm a little penguin, black and white
+# I waddle to the left,           and I waddle to the right
+# When I'm feeling hungry,
+#     splash and splish,
+#         I jump in the water,
+#             and catch a fish!
+# """
+# )
+
+# print("I'm a little penguin, black and white\nI waddle to the left,\t\tand I waddle to the right\nWhen I'm feeling hungry,\n    splash and splish,\n\tI jump in the water,\n\t\tand catch a fish!")
+
+# print("{line_1}\n{line_2}\n{line_3}\n{line_4}\n{line_5}\n{line_6}".format(
+#     line_1 = "I'm a little penguin, black and white",
+#     line_2 = "I waddle to the left,\t\tand I waddle to the right",
+#     line_3 = "When I'm feeling hungry,",
+#     line_4 = "    splash and splish,",
+#     line_5 = "\tI jump in the water,",
+#     line_6 = "\t\tand catch a fish!"
+# ))
+
+# line_1 = "I'm a little penguin, black and white"
+# line_2 = "I waddle to the left,\t\tand I waddle to the right"
+# line_3 = "When I'm feeling hungry,"
+# line_4 = "    splash and splish,"
+# line_5 = "\tI jump in the water,"
+# line_6 = "\t\tand catch a fish!"
+
+# print(f"{line_1}\n{line_2}\n{line_3}\n{line_4}\n{line_5}\n{line_6}")
+
+################################################################################################################
+
+# # Write a python program that converts celsius tempratures to fahrenheit. (f = 32 + 1.8 * c)
+
+# celsius = float(input('Enter a temperature in celsius: '))
+# print('{} degrees celsius are equivelant to {} degrees fahernheit'.format(celsius, 32 + 1.8 * celsius))
+
+################################################################################################################
+
+# # Write a Python program that finds a number’s square root, as well as its square.
+
+# n = 100
+
+# from math import sqrt
+
+# print('The square of {num} is {sq}, and the square root is {sqrt}'.format(
+#     num = n,
+#     sq = n ** 2,
+#     # sqrt = n ** 0.5
+#     sqrt = sqrt(n)
+# ))
+
+################################################################################################################
+
+# # Given the word `Hello`, write a Python program to print only the letter `e` using indexing (bonus: with two different methods).
+
+# print('Hello'[1])
+
+# string = 'Hello 7mada'
+
+# print(string[ 1 - len(string) ])
+
+
+
