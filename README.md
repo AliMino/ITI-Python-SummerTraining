@@ -253,7 +253,13 @@ Note: to print a special character as it appears; prefix it with a backslash `\`
 
 ### Static vs. Dynamic Typing
 
-TODO
+Static typing means that the type of a variable can't be changed after declaration, while in dynamic typed laguages you can change the type of a variable after declaration. Python is dynamically typed language.
+
+```python
+value = 5
+
+value = 'Five'
+```
 
 [^spec-chars]: https://en.wikipedia.org/wiki/List_of_Unicode_characters#Control_codes
 
