@@ -1,4 +1,4 @@
-# Exercises
+# Exercises - Numbers and Strings
 
 - [x] Create a program that asks the user to enter their name and their age. Print out a message addressed to them that tells them the year that they will turn 100 years old.
 - [x] Ask the user for a number. If the number is even, print 0, and if the number is odd, print 1.
