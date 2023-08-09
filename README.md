@@ -130,6 +130,8 @@ Note: You could add numbers using the `+` sign, however, the `+` sign concatenat
 
 ### Basic Arithmetic
 
+[Go to code](tutorial/4-basic-arithmetic.py)
+
 Basic arithmetic is done in python using operators
 
 - Summation: `+`
@@ -151,6 +153,8 @@ The arithemtic operators are evaluated in the following order
 ---
 
 ### Working with variables
+
+[Go to code](tutorial/5-variable-assignment.py)
 
 The name of a variable consists of one or more english character (a-z, A-Z) or an underscore `_` followed by zero or more english characters, underscores `_`, or numbers.
 
@@ -179,6 +183,8 @@ The name of a variable consists of one or more english character (a-z, A-Z) or a
 ---
 
 ### Manipulating strings
+
+[Go to code](tutorial/6-strings.py)
 
 #### String indexing
 
