@@ -227,6 +227,36 @@ print(len('Hello'))
 
 #### Here document
 
+On way to preseve the format of a huge and/or complexly-formatted string, is to save the entire string in a file with the desired format. The code reading such file will get the contents string with the same format appearred in the file.
+
+Another way to do so, is to store the string **HERE** - hence the name - in the source code, as following
+
+```python
+complex_string = """
+line 1
+  line 2
+    line 3
+"""
+
+# You can also use single quotes
+complex_string = '''
+line 1
+  line 2
+    line 3
+'''
+```
+
+Always remember that ***here-documents*** are - originally - strings; so you can use all string functions on them, see the next example...
+
+```python
+lower_case_string = """
+abc
+  def
+"""
+
+print(lower_case_string.upper())
+```
+
 ---
 
 ---
