@@ -22,6 +22,11 @@
       - [Usefull string methods](#usefull-string-methods)
       - [Formatting strings](#formatting-strings)
       - [Here document](#here-document)
+    - [Working with lists](#working-with-lists)
+      - [Adding items to lists](#adding-items-to-lists)
+      - [Removing items from lists](#removing-items-from-lists)
+      - [Count the occurrences of a specific value in a list](#count-the-occurrences-of-a-specific-value-in-a-list)
+      - [Sorting lists](#sorting-lists)
   - [Glossary](#glossary)
   - [Appendix](#appendix)
     - [Special Characters](#special-characters)
@@ -41,7 +46,7 @@ Python is preinstalled on almost every Linux system. However, it's more favorabl
 
 ### Printing values to the terminal
 
-[Go to code](tutorial/1-hello-world.py)
+[Go to code](../tutorial/1-hello-world.py)
 
 ```python
 # printing strings
@@ -71,7 +76,7 @@ By default, the `print()` function inserts a new line after the passed value(s).
 
 ### Read values from the user
 
-[Go to code](tutorial/2-prompt-the-user.py)
+[Go to code](../tutorial/2-prompt-the-user.py)
 
 The `input()` function prompts the user to enter a value.
 
@@ -83,7 +88,7 @@ print('Hello', input('What is your name?'))
 
 ### Data types
 
-[Go to code](tutorial/3-querying-for-types.py)
+[Go to code](../tutorial/3-querying-for-types.py)
 
 |             Data Type | Name in Python | Description                                              | Examples            |
 | --------------------: | :------------: | :------------------------------------------------------- | :------------------ |
@@ -130,7 +135,7 @@ Note: You could add numbers using the `+` sign, however, the `+` sign concatenat
 
 ### Basic Arithmetic
 
-[Go to code](tutorial/4-basic-arithmetic.py)
+[Go to code](../tutorial/4-basic-arithmetic.py)
 
 Basic arithmetic is done in python using operators
 
@@ -154,7 +159,7 @@ The arithemtic operators are evaluated in the following order
 
 ### Working with variables
 
-[Go to code](tutorial/5-variable-assignment.py)
+[Go to code](../tutorial/5-variable-assignment.py)
 
 The name of a variable consists of one or more english character (a-z, A-Z) or an underscore `_` followed by zero or more english characters, underscores `_`, or numbers.
 
@@ -184,7 +189,13 @@ The name of a variable consists of one or more english character (a-z, A-Z) or a
 
 ### Manipulating strings
 
-[Go to code](tutorial/6-strings.py)
+<span style="text-align:center">
+
+***Strings are immutable sequence of characters.***
+
+</span>
+
+[Go to code](../tutorial/6-strings.py)
 
 #### String indexing
 
@@ -265,6 +276,81 @@ print(lower_case_string.upper())
 
 ---
 
+### Working with lists
+
+<span style="text-align:center">
+
+***Lists are mutable sequence of items (of any type).***
+
+</span>
+
+[Go to code](../tutorial/7-lists.py)
+
+```python
+empty_list = []
+```
+
+#### Adding items to lists
+
+since the lists are mutable you can populate the list after its creation; using the `append()` function, as following
+
+```python
+names = []
+
+names.append('Khaled')
+names.append('Sally')
+```
+
+#### Removing items from lists
+
+You can remove any item from a list using the `pop()` function. By default, the `pop()` function removes **and returns** the last item in the list. You can specify the index of the item to be removed (popped).
+
+```python
+todo_list = [
+
+  'workout',
+  'study',
+  '1h of gaming'
+]
+
+last_task = todo_list.pop()
+
+print(last_task)    # '1h of gaming'
+print(todo_list)    # [ 'workout', 'study' ]
+
+first_task = todo_list.pop(0)
+
+print(last_task)    # 'workout'
+print(todo_list)    # [ 'study' ]
+```
+
+#### Count the occurrences of a specific value in a list
+
+Lists have the buildin function `count()` which accepts an item, then returns the number of times the specified item has been appearred in the list, see the example...
+
+```python
+quiz_points = [ 10, 9, 10, 8, 10, 5 ]
+
+# If we are to retrieve the number of trainees who obtained 10 points
+print(quiz_points.count(10))    # 3
+```
+
+#### Sorting lists
+
+Lists can be sorted - out of the box - using the `sort()` function. However, you can't sort lists having items of mixed types; such as strings and numbers, but you can sort integers and floating point numbers.
+
+Note that the `sort()` function sorts the list **in place**; this means that the call to the `sort()` function will return None (returns nothing), and the **original** list will be sorted, see the following example...
+
+```python
+random_numbers = [ 6, 2, 8, 1, 3, 0, 4 ]
+
+print(random_numbers.sort())  # None
+
+print(random_numbers)         # [0, 1, 2, 3, 4, 6, 8]
+```
+
+---
+
 ---
 
 ## Glossary
@@ -303,6 +389,6 @@ value = 'Five'
 
 <hr style="width:70%">
 
-[Top](#python-training)
+[Top](#python-training) &emsp; | &emsp; [Summary](summary.md)
 
 </span>
