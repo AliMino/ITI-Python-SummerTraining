@@ -6,7 +6,7 @@
 
 # Declaring tuples
 
-tup = (1, 2, 3, 2)
+# tup = (1, 2, 3, 2)
 # tup = ('',)
 
 # print(type(tup))
@@ -39,9 +39,23 @@ tup = (1, 2, 3, 2)
 
 # converting tuples to lists
 
-lst = list(tup)
+# lst = list(tup)
 
-print(tup)
-print(lst)
+# print(tup)
+# print(lst)
 
-lst[0] = 4
+# lst[0] = 4
+
+#########################
+
+# Tuples unpacking
+
+tup = ( 'Python', 3.6, 12 )
+
+# lang = tup[0]
+# ver  = tup[1]
+
+lang, ver = tup[:2]
+
+print(lang)
+print(ver)

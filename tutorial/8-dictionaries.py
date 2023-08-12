@@ -23,12 +23,3 @@ print(person['favorite_programming_langugages'][0].lower())
 print(person.keys())
 print(person.values())
 print(person.items())
-
-[
-    (),
-    (),
-    (),
-    (),
-    (),
-    (),
-]
